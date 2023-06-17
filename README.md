@@ -48,4 +48,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions or require further assistance, please don't hesitate to reach out. You can contact me through the contact form on my portfolio website or via email at [sauravprasai2016@gmail.com](mailto:sauravprasai2016@gmail.com
+If you have any questions or require further assistance, please don't hesitate to reach out. You can contact me through the contact form on my portfolio website or via email at [sauravprasai2016@gmail.com]
