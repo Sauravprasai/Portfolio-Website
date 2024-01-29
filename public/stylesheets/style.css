@@ -6,6 +6,7 @@ body {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   /* For Safari */
+  min-height: 100vh;
 }
 
 p {
@@ -96,13 +97,16 @@ h3 {
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  margin-top: 67px;
+  padding: 20px; 
 }
 
 .text-footer{
@@ -115,5 +119,40 @@ h3 {
 
 .link-footer:hover{
   color: red;
+}
+
+@media (max-width: 991px) {
+  .rounded-circle {
+      width: 50%;
+      margin: 0 auto; 
+  }
+
+  .cmpg{
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.content {
+  margin-bottom: 100px;
+}
+
+.project-column {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+
+@media (max-width: 1400px) {
+  .project-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .project-column {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
 }
 
