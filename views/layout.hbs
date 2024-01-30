@@ -5,6 +5,7 @@
   <title>{{title}}</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="icon" sizes="180x180" href="/images/logo/white_logo.png">
 </head>
 
 <body>
@@ -42,39 +43,11 @@
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script type="text/javascript" src="javascripts/vanilla-tilt.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script src="javascripts/main.js" type="text/javascript"></script>
-  <script>
-    VanillaTilt.init(document.querySelectorAll(".card"), {
-      max: 4,
-      speed: 100,
-    });
-
-    var typed = new Typed(".auto-input", {
-      strings: ["Saurav Prasai", "a Web developer", "a Software developer"],
-      typeSpeed: 80,
-      backSpeed: 80,
-      loop: true
-    });
-
-    function sendEmail() {
-      var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
-      var message = document.getElementById("message").value;
-      var body = "Name: " + name + "<br>Email: " + email + "<br>Message: " + message;
-
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "sauravprasai2020@gmail.com",
-        Password: "sazcwrcgtbbrqpkb",
-        To: "sauravprasai2020@gmail.com",
-        From: email,
-        Subject: "Inquiry Email from website",
-        Body: body
-      }).then(function (message) {
-        alert("Email sent successfully");
-      });
-    }
-  </script>
-</body>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.38/build/spline-viewer.js"></script>
+  <script type="text/javascript" src="javascripts/main.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@500&family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  </body>
 
 </html>
